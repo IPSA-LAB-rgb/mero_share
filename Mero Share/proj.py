@@ -34,11 +34,11 @@ def company_shares():
         time = pendulum.now()
         
         if Total > 0:
-            print(f"Congratulations!! You've earned a total profit of {Total} at {time}. ")
+            print(f"Congratulations!! As of {time} you've earned a total profit of {Total}. ")
         elif Total == 0:
-            print(f"You're neutral at {time}. ")
+            print(f"As of  {time}, you're neutral . ")
         else:
-            print(f"Sorry, you're at a loss at {time}. ")
+            print(f"Sorry, as of  {time} you're at a loss. ")
         
         w = input("Do you want to see the profit/loss that you've gained for other companies as well (Y/N)? ")
         
